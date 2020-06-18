@@ -16,3 +16,7 @@ userParam03 = 1   # number of repetitions
 
 [VELOCITY]
 viscosity = 1
+
+[DEVICE]
+backend=cuda
+id=rank

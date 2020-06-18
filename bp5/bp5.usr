@@ -374,7 +374,7 @@ c-----------------------------------------------------------------------
       verbose= 1
       maxitg = maxit
       tstart = dnekclock_sync()
-      call accel_cg(u1,r1,tol,maxitg,verbose,ierr)
+      call device_cg(u1,r1,tol,maxitg,verbose,ierr)
       tstop  = dnekclock_sync()
       telapg = tstop-tstart
       dofpsg = (maxitg*ndof)/telapg
